@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p7</title>
+</head>
+<body bgcolor="lightpink">
+    <form action="submit.php" method="post">
+    <fieldset>
+        <legend> Form</legend>
+        <label for="name">Name:</label><br>         
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        Gender :  
+    <br>  
+    <input type="radio" name="male"> Male <br>  
+    <input type="radio" name="female"> Female <br>  
+    <input type="radio" name="other"> Other<br><br>  
+    Phone :  
+    <input type="text" name="country code"  value="+91|"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="mexico">Mexico</option>
+        </select>
+    </fieldset>
+    <input type="button" value="Reset"/> 
+    <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
