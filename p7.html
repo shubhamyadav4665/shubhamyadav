@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p7</title>
+</head>
+<body>
+    <h1><center>Registration Page</center> </h1> 
+    <form action="submit.php" method="post">
+    <fieldset>
+        <legend> Form</legend>
+        <pre> 
+NAME:       <input type="text" name="firstname"><br>
+MIDDLE NAME:<input type="text" name="middlename"> <br>     
+LAST NAME:  <input type="text" name="lastname">
+                  </pre>
+                  Gender :<br>  
+                  <input type="radio" name="radio"> Male <br>  
+                  <input type="radio" name="radio"> Female <br>  
+                  <input type="radio" name="radio"> Other<br><br>  
+    Phone :  
+    <input type="text" name="country code"  value="+91|"><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="mexico">Mexico</option>
+        </select><br><br>
+        Email:  
+    <input type="email" id="email" name="email"/> <br><br>  
+    Password:  
+    <input type="Password" id="pass" name="pass"> <br><br>  
+    Re-type password:  
+    <input type="Password" id="repass" name="repass"><br><br>
+    </fieldset>
+    <button type="Reset">Reset</button>
+    <button type="submit">Submit</button>
+    </form>
+</body>
+</html><style>
+    .body{
+        background-color: lightpink;
+
+    }
+</style>

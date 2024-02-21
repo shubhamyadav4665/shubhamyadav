@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p8</title>
+    <style>
+    body{
+        background-color:darkgrey;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    h1{
+        text-align: center;
+        color:rgb(0, 0, 0);
+    }
+    </style>
+</head>
+<body>
+    <h1>Registration Page</h1> 
+    <form action="submit.php" method="post">
+    <fieldset>
+        <legend><h2>Form</h2></legend>
+        <pre> 
+NAME:       <input type="text" name="firstname" placeholder="Enter your name"><br>
+MIDDLE NAME:<input type="text" name="middlename" placeholder="Enter your middle name"> <br>     
+LAST NAME:  <input type="text" name="lastname" placeholder="Enter your last name">
+                  </pre>
+        Gender :<br>  
+    <input type="radio" name="radio"> Male <br>  
+    <input type="radio" name="radio"> Female <br>  
+    <input type="radio" name="radio"> Other<br><br>  
+    Phone :  
+    <input type="text" name="country code"  value="+91|"><br><br>
+        <label for="Address">Address:</label><br>
+        <textarea id="Address" name="Address" rows="4" cols="50"></textarea><br><br>
+        Country:
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="mexico">Mexico</option>
+        </select><br><br>
+    Email:  
+    <input type="email" id="email" name="email" placeholder="Enter your Email"> <br><br>  
+    Password:  
+    <input type="Password" id="pass" name="pass"> <br><br>  
+    Re-type password:  
+    <input type="Password" id="repass" name="repass"><br><br>
+    <button type="Reset">Reset</button>
+    <button type="submit">Submit</button>
+    </fieldset>
+</body>
+</html>
