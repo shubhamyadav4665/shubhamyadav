@@ -1,4 +1,3 @@
-
 std_name=str(input("Enter your name: "))
 En_no=str(input("Enter your EN. No.:"))
 course=str(input("Enter your course:"))
