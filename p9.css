@@ -5,6 +5,10 @@
 }
 .body{
     background-color:  #81bcf3;
+
+}
+.gradient{
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.5),rgba(0, 255, 0, 0.5),rgba(0, 0, 255, 0.5));
 }
 .banner{
     width: 100%;
@@ -16,7 +20,7 @@
 .navbar{
     width: 85%;
     margin: auto;
-    padding: 35px;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,7 +33,7 @@
 }
 .navbar ul li a{
     text-decoration: none;
-    color: #a10606;
+    color: #070101;
     text-transform: uppercase;
 }
 .navbar ul li::after{
@@ -62,4 +66,162 @@
     font-weight: 25px;
     line-height: 25px;
 }
+.click a{
+    color: #fff;
+}
+button{
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin-left: 88;
+    border-radius: 25px;
+    font-weight: bold;
+    border : 2px solid #2e2c2c;
+    background: transparent;
+    text-decoration: none;
+    color: #171212;
+    cursor: pointer;
+    align-items: center;
+    }
 
+
+.box{
+    width: 400px;
+    background: transparent;
+    color: #000000;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    padding: 40px 50px;
+    backdrop-filter: blur(20px);
+    box-shadow: 10px 8px 1px 3px #8fc2f1;
+    
+}
+.box h1{
+    font-size: 36px;
+    text-align: center;
+    
+
+}
+.box .inputbox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.inputbox input{
+     text-align: center;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        border-radius: 40px;
+        font-size: 25px;
+        color: #000000;
+        padding: 20px 45px 20px 20px;
+}
+.inputbox input::placeholder{
+    color: #000000;
+}
+.boxcenter{ 
+    display: flex;
+    justify-content: center;
+}
+.text-effect{
+    text-shadow: 1px 1px 3px black, 0 0 30px rgb(255, 255, 255), 0 0 5px rgb(118, 156, 223);
+
+}
+.margin{
+    background: transparent;
+    margin: 20px 0 15px;
+    text-align: center;
+    font-size: 25px;
+    color: #000000;
+    justify-content: center;
+    padding : 5px;
+    
+}
+.option{
+    margin-right: 100%;
+    text-align: center;
+    align-content: center;
+}
+.detail{
+    background-image:url(bg.jpeg);
+    background-position: center;
+}
+.b1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    padding: 5px 10px;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+   
+}
+.series{
+    text-align: center;
+    color: #000000;
+    padding: 100px;
+    font-size: 25px;
+}
+.series p{  
+    margin-top: 30px;
+    font-size: 25px;
+}
+button:hover{
+    background-color: #4e7299;
+}
+.shadow{
+    text-shadow: 2px 2px 4px #000000;
+}
+.login{
+    text-shadow: 1px 1px 3px black, 0 0 30px rgb(255, 255, 255), 0 0 5px rgb(118, 156, 223);
+}
+.search-container{
+    height: 30px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+.search-container:hover > .search-input{
+    width: 400px;
+}
+
+.search-container .search-input{
+    background: transparent;
+    border: none;
+    outline:none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+
+}
+
+.search-container .search-btn .fas{
+    color: #5cbdbb;
+}
+
+@keyframes hoverShake {
+  0% {transform: skew(0deg,0deg);}
+  25% {transform: skew(5deg, 5deg);}
+  75% {transform: skew(-5deg, -5deg);}
+  100% {transform: skew(0deg,0deg);}
+}
+
+.search-container:hover{
+  animation: hoverShake 0.15s linear 3;
+}
